@@ -1,26 +1,24 @@
 {
   "name": "samdengler.github.io",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Personal blog",
+  "type": "module",
   "scripts": {
     "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
+    "build": "cross-env NODE_ENV=production vitepress build",
+    "preview": "cross-env NODE_ENV=production vitepress preview"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samdengler/samdengler.github.io.git"
   },
-  "keywords": [],
-  "author": "",
+  "author": "Sam Dengler",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/samdengler/samdengler.github.io/issues"
-  },
-  "homepage": "https://github.com/samdengler/samdengler.github.io#readme",
-  "dependencies": {
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "fs-extra": "^11.2.0",
+    "globby": "^14.0.0",
+    "gray-matter": "^4.0.3",
     "vitepress": "^1.6.4"
   }
 }

@@ -1,6 +1,8 @@
 ---
-title: Hello World
 date: 2026-03-01
+title: Hello World
+tags:
+  - blog
 description: My first post on this blog.
 ---
 
